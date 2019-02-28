@@ -4,9 +4,9 @@
   "description": "Github robot in order to close the issue of non-owners",
   "author": "axetroy <troy450409405@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com//my-first-app.git",
-  "homepage": "https://github.com//my-first-app",
-  "bugs": "https://github.com//my-first-app/issues",
+  "repository": "https://github.com//axetroy/github-no-issue-bot.git",
+  "homepage": "https://github.com//axetroy/github-no-issue-bot",
+  "bugs": "https://github.com//axetroy/github-no-issue-bot/issues",
   "keywords": [
     "probot",
     "github",
