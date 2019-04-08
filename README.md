@@ -1,5 +1,7 @@
 # github-no-issue-bot
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/github-no-issue-bot.svg)](https://greenkeeper.io/)
+
 > A GitHub App built with [Probot](https://github.com/probot/probot) that close the issue of non-owners
 
 ## Setup
