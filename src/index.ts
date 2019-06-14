@@ -1,5 +1,4 @@
-import * as https from "https";
-import { URL } from "url";
+import * as http from "http";
 import { Application } from "probot"; // eslint-disable-line no-unused-vars
 
 process.addListener("uncaughtException", err => {
@@ -49,8 +48,5 @@ Your issue will be closed and locked.
 
 // Keep it active
 setInterval(() => {
-  const options = new URL("https://github-no-issue-bot.herokuapp.com/");
-  https.get(options, res => {
-    // ...
-  });
+  http.get("http://github-no-issue-bot.herokuapp.com/");
 }, 1000 * 60);
