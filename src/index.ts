@@ -49,4 +49,4 @@ Your issue will be closed and locked.
 // Keep it active
 setInterval(() => {
   http.get("http://github-no-issue-bot.herokuapp.com/");
-}, 1000 * 60);
+}, 1000 * 60 * 5); // 5 minutes
