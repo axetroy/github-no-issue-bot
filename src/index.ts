@@ -50,7 +50,7 @@ Your issue will be closed and locked.
 // Keep it active
 setInterval(() => {
   const options = new URL("https://github-no-issue-bot.herokuapp.com/");
-  https.request(options, res => {
+  https.get(options, res => {
     // ...
   });
 }, 1000 * 60);
