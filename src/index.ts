@@ -1,6 +1,10 @@
-import * as http from "http";
+import * as https from "https";
 import { URL } from "url";
 import { Application } from "probot"; // eslint-disable-line no-unused-vars
+
+process.addListener("uncaughtException", err => {
+  console.error(err);
+});
 
 export = (app: Application) => {
   app.on("issues.opened", async context => {
@@ -43,11 +47,10 @@ Your issue will be closed and locked.
   });
 };
 
-const options = new URL("https://github-no-issue-bot.herokuapp.com/");
-
 // Keep it active
 setInterval(() => {
-  const req = http.request(options, res => {
+  const options = new URL("https://github-no-issue-bot.herokuapp.com/");
+  https.request(options, res => {
     // ...
   });
 }, 1000 * 60);
