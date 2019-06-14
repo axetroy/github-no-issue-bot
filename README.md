@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/axetroy/github-no-issue-bot.svg?branch=master)](https://travis-ci.com/axetroy/github-no-issue-bot)
+
 # github-no-issue-bot
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that close the issue of non-owners

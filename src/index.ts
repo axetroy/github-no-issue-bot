@@ -20,6 +20,7 @@ Your issue will be closed and locked.
       // config field
       const configField = "no-issue-bot";
 
+      // read .github/config.yml
       const config = await context.config("config.yml", {
         [configField]: defaultReply
       });
