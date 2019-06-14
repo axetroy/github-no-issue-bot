@@ -1,3 +1,5 @@
+import * as http from "http";
+import { URL } from "url";
 import { Application } from "probot"; // eslint-disable-line no-unused-vars
 
 export = (app: Application) => {
@@ -39,3 +41,12 @@ Your issue will be closed and locked.
     }
   });
 };
+
+const options = new URL("https://github-no-issue-bot.herokuapp.com/");
+
+// Keep it active
+setInterval(() => {
+  const req = http.request(options, res => {
+    // ...
+  });
+}, 1000 * 60);
